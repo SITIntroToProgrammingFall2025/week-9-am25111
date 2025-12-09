@@ -5,7 +5,10 @@ int min(int a, int b) {
 }
 
 int main () {
-    int a[5]={5,2,3,4,1};
+    int a[5]=;
+    for (int i=0;i<5;i++) {
+        scanf("%d",&a[i]);
+    }
     int rank[5]={9999,9999,9999,9999,9999};\
     int visited[5];
     for (int i=0;i<5;i++) {
@@ -23,6 +26,7 @@ int main () {
         }
         visited[rank[i]] = 1;
     }
+    printf("sorted array:\n");
     for (int i=0;i<5;i++) {
         printf("%d ",a[rank[i]]);
     }
